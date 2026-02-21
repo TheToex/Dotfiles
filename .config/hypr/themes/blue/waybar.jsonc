@@ -1,0 +1,81 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    // "height": 25, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 5, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+       // "idle_inhibitor",
+        "pulseaudio",
+        "hyprland/language",
+	"tray",
+	"battery",
+	"clock",
+        "custom/power"
+    ],
+    // Modules configuration
+  "hyprland/workspaces": {
+  "format": "{icon}",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+  }
+},
+
+    "hyprland/language": {
+    "format": "{}",
+    "format-en": "En",
+    "format-fa": "Fa",
+    "keyboard-name": "AT Translated Set 2 keyboard"
+  },
+	   
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+        // "timezone": "Asia/Tehran",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+  	"format-muted": "",
+  	"format-icons": {
+    	"default": ["", "", ""]
+  		},
+  	"on-click": "pavucontrol"
+    },
+
+    "custom/power": {
+        "format" : "⏻ ",
+		"tooltip": false,
+		"on-click": "wlogout",
+		"interval": 3600
+		
+    },
+
+    "battery": {
+    "format": "{capacity}% ",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "tooltip-format": "Battery: {capacity}%\nTime remaining: {time}",
+    "interval": 30
+   }
+}
