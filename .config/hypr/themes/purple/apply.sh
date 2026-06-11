@@ -5,14 +5,15 @@ THEMES="$HOME/.config/hypr/themes"
 
 # set current
 ln -sfn "$THEME_DIR" "$THEMES/current"
-
+ln -sfn "$THEME_DIR/yazi/theme.toml" "/home/toex/.config/yazi"
 # wallpaper
-awww img --transition-type grow --transition-duration 1 --transition-fps 60 ~/.config/hypr/themes/blue/wall.jpg
+awww img --transition-type grow --transition-duration 1 --transition-fps 60 ~/.config/hypr/themes/purple/wall.jpg
 
 # waybar
 pkill waybar
 waybar -c "$THEME_DIR/waybar/waybar.jsonc" \
        -s "$THEME_DIR/waybar/waybar.css" &
+
 # swaync
 pkill swaync
 swaync -s "$THEME_DIR/swaync/style.css" &

@@ -7,11 +7,14 @@ THEMES="$HOME/.config/hypr/themes"
 ln -sfn "$THEME_DIR" "$THEMES/current"
 
 # wallpaper
-swww img --transition-type grow --transition-duration 1 --transition-fps 60 ~/.config/hypr/themes/gray/wall.png
+awww img --transition-type grow --transition-duration 1 --transition-fps 60 ~/.config/hypr/themes/gray/wall.png
 
 # waybar
 pkill waybar
-waybar -c "$THEME_DIR/waybar.jsonc" \
-       -s "$THEME_DIR/waybar.css" &
+waybar -c "$THEME_DIR/waybar/waybar.jsonc" \
+       -s "$THEME_DIR/waybar/waybar.css" &
+# swaync
+pkill swaync
+swaync -s "$THEME_DIR/swaync/style.css" &
 # reload hyprland
 hyprctl reload

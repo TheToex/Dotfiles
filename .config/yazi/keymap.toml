@@ -1,5 +1,0 @@
-[manager]
-prepend_keymap = [
-    { on = [ "right" ], exec = 'shell --block --confirm "if [ -d \"$1\" ]; then yazi-msg emit enter; else yazi-msg emit open; fi" --arg "$@"', desc = "Smart Enter (Ranger style)" },
-    { on = [ "l" ],     exec = 'shell --block --confirm "if [ -d \"$1\" ]; then yazi-msg emit enter; else yazi-msg emit open; fi" --arg "$@"', desc = "Smart Enter (Ranger style)" }
-]
