@@ -1,7 +1,7 @@
-<img src="./Hyprland.png">
+![Hyprland](./Hyprland.png)
 # My Hyprland Dotfiles
-<br></br>
 ## Distro: Arch
+---
 ## Package List: 
 - hyprland
 - hyprlock
@@ -13,10 +13,11 @@
 - awww
 - thunar
 - yazi
+---
 ## Installation
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
-<h4>Shortcuts: coming soon... </h4>
-
+### shotcuts
+comming soon...
