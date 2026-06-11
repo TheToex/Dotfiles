@@ -30,4 +30,4 @@ chmod +x install.sh
 - SHIFT + Prtsc = screenshot (save in ~/Pictures/screenshots)
 - SUPER + F7 = screenrecorde (via wf-recorder)
 - SHIFT + F7 = stop screenrecorder
-for more shortcuts, please see **~/.config/hypr/hyprland.conf**
+- for more shortcuts, please see **~/.config/hypr/hyprland.conf**
